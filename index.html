@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .TrendImg {
+            width: 150px;
+        }
+
+        .container {
+            display: flex;
+            width: 84%;
+            justify-content: space-around;
+            gap: 50px;
+            margin-top: 25px;
+            align-items: center;
+            margin: 0 auto;
+
+        }
+
+        .inpSearch {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            cursor: s;
+            padding: 5px;
+            color: orange;
+        }
+
+        .search {
+            /* width: 400px; */
+            position: relative;
+        }
+
+        .searchTrendyol {
+            width: 600px;
+            padding: 10px;
+            background-color: #efefef;
+            border: none;
+        }
+
+        .login {
+            display: flex;
+            gap: 30px;
+        }
+
+        .login span {
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .login div:hover {
+            color: #f27a1a;
+        }
+
+        /* section */
+        .menu {
+            width: 83.5%;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 8rem;
+            margin-top: 1.5rem;
+        }
+
+        .menu a {
+            color: black;
+        }
+
+        .menu a:hover {
+            padding-bottom: 0.5rem;
+            border-bottom: 4px solid #f27a1a;
+        }
+
+        .company {
+            width: 83.5%;
+            margin: 0 auto;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .company-img {
+            width: 70px;
+        }
+
+        /* section */
+        /* section 2 */
+        .container-satilanlar {
+            width: 83.5%;
+            margin: 0 auto;
+
+        }
+
+        .container-satilanlar p {
+            width: 30%;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .theBest {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+
+        }
+
+        .best {
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        .best:nth-child(1){
+            color: rgb(1, 116, 50);
+            background-color: rgb(239, 251, 245);
+        }
+        .best:nth-child(2){
+            color: rgb(156, 81, 20);
+            background-color: rgb(254, 244, 236);
+        }
+        .best:nth-child(3){
+            color: rgb(182, 18, 72);
+            background-color: rgb(254, 240, 242);
+        }
+        .best:hover {
+            cursor: pointer;
+        }
+
+        .gallery {
+            width: 83.5%;
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #homePage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .img {
+            width: 408px;
+            height: 225px;
+        }
+
+        /* section 2 */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="TrendImg" src="https://cdn.dsmcdn.com/web/logo/ty-web.svg" alt="">
+            <div class="search">
+                <input class="searchTrendyol" type="text" placeholder="Axtardiginiz mehsul">
+                <i class="fa-solid fa-magnifying-glass inpSearch"></i>
+            </div>
+            <div class="login">
+                <div class="username">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Giriş Yap</span>
+                </div>
+                <div class="fovoriler">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Fovorilerim</span>
+                </div>
+                <div class="sepetim">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Sepetim</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="cotecories">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Kadın</a></li>
+                    <li><a href="#">Erkek</a></li>
+                    <li> <a href="#">Anne & cocuk</a></li>
+                    <li> <a href="#">Ev & Mobilya</a></li>
+                    <li> <a href="#">Supermarket</a></li>
+                    <li> <a href="#">Kozmetik</a></li>
+                    <li> <a href="#">Ayakkabi & Canta</a></li>
+                    <li> <a href="#">Elektronik</a></li>
+                    <li> <a href="#">Spor&Outdoor</a></li>
+                    <li> <a href="#">Cok Satanlar</a></li>
+                    <li> <a href="#">Flas Urunler</a></li>
+                </ul>
+            </nav>
+            <div class="company">
+                <div class="box">
+                    <img class="company-img"
+                        src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/2/14/En_Cok_Satanlar_202302142041.png"
+                        alt="">
+                    <p>Sen De Al</p>
+                </div>
+                <div class="box">
+                    <img class="company-img"
+                        src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/2/14/Senin_Icin_Sectik_202302142041.png"
+                        alt="">
+                    <p>Sen De Al</p>
+                </div>
+                <div class="box">
+                    <img class="company-img"
+                        src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/7/26/Widget_202307261451.png"
+                        alt="">
+                    <p>Sen De Al</p>
+                </div>
+                <div class="box">
+                    <img class="company-img"
+                        src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/7/20/Widget_202307201111.png"
+                        alt="">
+                    <p>Sen De Al</p>
+                </div>
+                <div class="box">
+                    <img class="company-img"
+                        src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/5/5/Widget_202305051022.png"
+                        alt="">
+                    <p>Sen De Al</p>
+                </div>
+                <div class="box">
+                    <img class="company-img"
+                        src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/8/22/Kredilercircle_202308221603.png"
+                        alt="">
+                    <p>Sen De Al</p>
+                </div>
+                <div class="box">
+                    <img class="company-img"
+                        src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/8/15/Widget_202308151718.png"
+                        alt="">
+                    <p>Sen De Al</p>
+                </div>
+                <div class="box">
+                    <img class="company-img"
+                        src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/1/26/Apple_202301262111.jpg"
+                        alt="">
+                    <p>Sen De Al</p>
+                </div>
+                <div class="box">
+                    <img class="company-img"
+                        src="https://cdn.dsmcdn.com/mnresize/200/200/marketing/datascience/automation/2023/3/31/Topstory_202303311553.jpg"
+                        alt="">
+                    <p>Sen De Al</p>
+                </div>
+            </div>
+        </section>
+        <section id="homePage">
+            <div class="container-satilanlar">
+                <div class="theBest">
+                    <p class="best">Sepete En Cok Eklenenler</p>
+                    <p class="best">Sepete En Cok Eklenenler</p>
+                    <p class="best">Sepete En Cok Eklenenler</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="img">
+                    <img class="img"
+                        src="https://cdn.dsmcdn.com/ty1005/pimWidgetApi/mobile_20230930011104_Happiness02100910YENIBANNER.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img class="img"
+                        src="https://cdn.dsmcdn.com/ty1005/pimWidgetApi/mobile_20231002161032_Alacati03101010YENIBANNER.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img class="img"
+                        src="https://cdn.dsmcdn.com/ty1006/pimWidgetApi/mobile_20230929120848_2331033KadinMobile202309291501.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img class="img"
+                        src="https://cdn.dsmcdn.com/ty999/pimWidgetApi/mobile_20230915143203_trwomanyenisezon150923mobile.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img class="img"
+                        src="https://cdn.dsmcdn.com/ty1009/pimWidgetApi/mobile_20231003124248_thumbnail2338675AyakkabiCantaMobile202310031201.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img class="img" src="https://cdn.dsmcdn.com/ty1007/pimWidgetApi/mobile_20231002173917_KADINFW.jpg"
+                        alt="">
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
